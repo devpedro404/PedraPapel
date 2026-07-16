@@ -61,7 +61,7 @@ public class JogoPedraPapelTesoura {
         System.out.println("3 - Tesoura");
         System.out.print("Sua escolha: ");
         
-        int escolhaJogador = scanner.next(); // <--- LINHA DO ERRO
+        int escolhaJogador = scanner.nextInt();
         
         if (escolhaJogador < 1 || escolhaJogador > 3) {
             System.out.println("Escolha inválida! Tente novamente.");
@@ -99,7 +99,7 @@ public class JogoPedraPapelTesoura {
             (jogador == TESOURA && computador == PAPEL)) {
             return 1; 
         } else {
-            return 2;
+            return 2; 
         }
     }
     
